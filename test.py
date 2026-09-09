@@ -1,18 +1,58 @@
-import math 
-num = int(input("first number"))
-num_2 = int(input("2nd number"))
-opr = input("operator(+,-,*,/,sin,cos,tan,log)")
-if opr == "+":
-    print(num + num_2)
-elif opr == "-":
-    print(num-num_2)
-elif opr == "*":
-    print(num*num_2)
-elif opr == "/":
-    print(num/num_2)
-elif opr == "sin":
-    print(math.sin(num))
-elif opr == "tan":
-    print(math.tan(num))
-elif opr == "log":
-    print(math.log(num))
+tasks = []  
+
+while True:
+    print("\n--- TO-DO LIST ---")
+    print("1. Add Task")
+    print("2. View Tasks")
+    print("3. Remove Task")
+    print("4. Exit")
+    
+    choice = input("Enter your choice: ")
+    
+    if choice == "1":
+        task = input("Enter the task: ")
+        tasks.append({"task": task, "done": False})
+        print("Task added!")
+        
+    elif choice == "2":
+        if len(tasks) == 0:
+            print("No tasks yet.")
+        else:
+            print("\nYour Tasks:")
+            completed = 0
+            for i, t in enumerate(tasks, 1):
+                status = "✓" if t["done"] else " "
+                print(f"{i}. [{status}] {t['task']}")
+                if t["done"]:
+                    completed += 1
+            
+            # Progress bar
+            total = len(tasks)
+            percent = int((completed / total) * 100) if total > 0 else 0
+            bar = "█" * (percent // 10) + "-" * (10 - percent // 10)
+            print(f"\nProgress: [{bar}] {percent}% ({completed}/{total} done)")
+        
+    elif choice == "3":
+        if len(tasks) == 0:
+            print("No tasks to remove.")
+        else:
+            num = int(input("Enter task number to toggle complete/remove: "))
+            if 1 <= num <= len(tasks):
+                action = input("Mark as done or remove? d/r: ")
+                if action == "d":
+                    tasks[num-1]["done"] = not tasks[num-1]["done"]
+                    print("Task status updated!")
+                elif action == "r":
+                    tasks.pop(num-1)
+                    print("Task removed!")
+            else:
+                print("Invalid task number.")
+                
+    elif choice == "4":
+        print("Goodbye!")
+        break
+        
+    else:
+        print("Invalid choice. Try again.")
+   
+                
