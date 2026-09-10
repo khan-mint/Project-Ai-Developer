@@ -13,7 +13,7 @@ This repository contains my projects, code, and learning progress in Python and 
 
 **** Projects
 This repo will include:
-- `Project-Zed` - AI/ML project 
+- `Projects` - AI/ML project 
 - Python scripts and practice problems
 - Notes and learning resources
 
