@@ -24,7 +24,7 @@ This repo will include:
 
  Contact
 - **Email**: [ahmadahnaf44@gmail.com]
-- **LinkedIn**: []
+- **LinkedIn**: https://www.linkedin.com/in/ahmad-ahnaf-08b357432/
 - **Location**: Peshawar, Pakistan
 
 
