@@ -1,0 +1,725 @@
+import matplotlib.pyplot as plt
+import numpy as np 
+
+lst1 = np.array([10,12])
+lst2 = np.array([23,12])
+
+plt.plot(lst1,lst2)
+plt.show()      //////// only show diagonal line 
+============================================================================================================================================================
+import matplotlib.pyplot as mlt 
+import numpy as np
+
+lst1 = np.array([10,28])
+lst2 = np.array([12,21])
+
+mlt.plot(lst1,lst2 , '*')
+mlt.show()
+=========================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np
+
+lst1 = np.array([1,2,6,8])
+lst2 = np.array([3,8,1,10])
+
+mlt.plot(lst1,lst2)
+mlt.show()
+=======================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+xarr = np.array([1,2,6,8,9,10])
+yarr = np.array([1,2,3,4,5,6])
+
+mlt.plot(xarr,yarr)
+mlt.show()
+==================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+xarr = np.array([1,2,6,8,9,10])
+
+mlt.plot(xarr)
+mlt.show()
+===============================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+xarr = np.array([1,2,6,8,9,10])
+
+mlt.plot(xarr,marker = 'o')
+
+mlt.show()
+
+===================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+lst1 = np.array([1,2,3,4,5])//////////////you can use s,D,d,0,o,*,<,>
+
+mlt.plot(lst1, marker = "s")
+mlt.show()
+=============================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np
+
+lst1 = np.array([3,8,9,10])
+
+mlt.plot(lst1, 'o:r') you can red = r , blue = b , green = g , organge  = o and for shapes we get s,D,d,o,<,> etc....
+mlt.show()
+=============================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np
+
+lst1 = np.array([3,6,8,9,10])
+
+mlt.plot(lst1,marker = "D" , ms = 10)
+mlt.show()
+=========================================================================================================================================
+import matplotlib.pyplot as mlt 
+import numpy as np 
+
+lst1 = []
+for i in range(1):
+    lst2 = int(input("first number : "))
+    lst1.append(lst2)
+
+    lst3 = int(input(" second number : "))
+    lst1.append(lst3)
+
+    lst4 = int(input("third number : "))
+    lst1.append(lst4)
+
+    lst5 = int(input("fourthe number :"))
+    lst1.append(lst5)
+
+    des = np.array([lst1])
+    
+    mlt.plot(des, marker = "*", ms = 20)
+    mlt.show()
+==========================================================================================================================================================
+
+import matplotlib.pyplot as mlt 
+import numpy as np 
+
+
+xlst = []
+ylst = []
+for i in range(1):
+    lst1 = int(input("what is the first number for x : "))
+    xlst.append(lst1)
+
+    lst2 = int(input("what is the second number for y : "))
+    xlst.append(lst2)
+
+    dlst1 = int(input("what is the number for y : "))
+    ylst.append(dlst1)
+
+    dlst2 = int(input("what is the number for y agian : "))
+    ylst.append(dlst2)
+
+    sed = np.array([xlst,ylst])
+    mlt.plot(sed ,  marker = "<" , ms = 20)
+    mlt.show()
+    
+=====================================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+xlst = []
+ylst = []
+
+i = 1
+while i <= 6:
+    lst1 = int(input("what is your number 1 for x :"))
+    xlst.append(lst1)
+
+    lst2 = int(input("what is your number 2 for x :"))
+    xlst.append(lst2)
+
+    lst3 = int(input("what is your number 3 for x :"))
+    xlst.append(lst3)
+
+    ydst1 = int(input("what is your number 1 for y :"))
+    ylst.append(ydst1)
+
+    ydst2 = int(input("what is your number 2 for y :"))
+    ylst.append(ydst2)
+
+    ydst3 = int(input("what is your number 3 for y : "))
+    ylst.append(ydst3)
+
+    iso = np.array([xlst,ylst])
+    mlt.plot(iso , marker = ">" , ms = 20)
+    mlt.show()
+
+    usr = input("do you want to proceed , if yes say y or if no say n")
+    if usr == "y":
+        xlst = []
+        ylst = []
+        
+        i = 1
+        while i <= 6:
+            lst1 = int(input("what is your number 1 for x :"))
+            xlst.append(lst1)
+        
+            lst2 = int(input("what is your number 2 for x :"))
+            xlst.append(lst2)
+        
+            lst3 = int(input("what is your number 3 for x :"))
+            xlst.append(lst3)
+        
+            ydst1 = int(input("what is your number 1 for y :"))
+            ylst.append(ydst1)
+        
+            ydst2 = int(input("what is your number 2 for y :"))
+            ylst.append(ydst2)
+        
+            ydst3 = int(input("what is your number 3 for y : "))
+            ylst.append(ydst3)
+        
+            iso = np.array([xlst,ylst])
+            mlt.plot(iso , marker = ">" , ms = 20)
+            mlt.show()
+            
+    elif usr == "n":
+        break
+        
+=============================================================================================================================================================================
+import matplotlib.pyplot as mlt 
+import numpy as np
+
+xlst = np.array([12,23,12])
+ylst = np.array([22,67,23])
+
+mlt.plot(xlst,ylst, marker = "D" , ms = "20" , mfc = "hotpink")
+mlt.show()
+=========================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+xlst = np.array([12,34,12])
+
+mlt.plot(xlst, linestyle ="dotted")
+mlt.show()
+==================================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+xlst = np.array([12,30,12])
+ylst = np.array([10,2,12])
+
+mlt.plot(xlst,ylst, ls = " ", marker = ">", color = "r")
+mlt.show()
+===================================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+xlst = []
+ylst = []
+
+i = 1
+while i <= 6:
+    lst1 = int(input("what is your number 1 for x :"))
+    xlst.append(lst1)
+
+    lst2 = int(input("what is your number 2 for x :"))
+    xlst.append(lst2)
+
+    lst3 = int(input("what is your number 3 for x :"))
+    xlst.append(lst3)
+
+    ydst1 = int(input("what is your number 1 for y :"))
+    ylst.append(ydst1)
+
+    ydst2 = int(input("what is your number 2 for y :"))
+    ylst.append(ydst2)
+
+    ydst3 = int(input("what is your number 3 for y : "))
+    ylst.append(ydst3)
+
+    iso = np.array([xlst,ylst])
+    mlt.plot(iso , marker = ">" , ms = 20)
+    mlt.show()
+
+    usr = input("do you want to proceed")
+    if usr == "yes":
+        continue
+    else:
+        break
+==================================================================================================================================================
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 1. Load CSV
+df = pd.read_csv('students.csv')
+
+# 2. Analysis
+avg_marks = df.groupby('Subject')['Marks'].mean()
+topper = df.loc[df['Marks'].idxmax()]
+failed = df[df['Marks'] < 60]
+
+print("Average Marks by Subject:")
+print(avg_marks)
+print("\nTopper:", topper['Name'], "with", topper['Marks'])
+print("\nFailed Students:")
+print(failed[['Name','Subject','Marks']])
+
+# 3. Graph
+avg_marks.plot(kind='bar', color=['blue','green'])
+plt.title('Average Marks by Subject')
+plt.ylabel('Marks')
+plt.show()
+=============================================================================================================================================================
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+lst1 = np.array([10,12])
+
+plt.plot(lst1 , marker = "<" , ms = "20" , ls = "dotted")
+plt.show()### it can be also dashed 
+==========================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+lst1 = np.array([12,34])
+
+mlt.plot(lst1 , marker = "D" , ms = "20" , ls = "dashed" , c = "black")
+mlt.show()
+===================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+
+lst1 = np.array([23,35])
+mlt.plot(lst1 , marker = "D" , ms = "20" , ls = "dashed" , c = "black" , lw = "10.4")
+mlt.show()
+===============================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np 
+
+lst1 = np.array([12,30])
+lst2 = np.array([20,10])
+lst3 = np.array([10,34])
+
+mlt.plot(lst1,lst2,lst3)
+mlt.show()
+===================================================================================================================================================================
+import numpy as np 
+import matplotlib.pyplot as plt 
+
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+
+plt.plot(x , y)
+plt.xlabel("spmething")
+plt.ylabel("23")
+
+plt.show()
+==============================================================================================================================================================================
+import numpy as np 
+import matplotlib.pyplot as mlt
+
+x = np.array([10,20,30,40])
+y = np.array([100,150,200,250])
+
+mlt.title("python is fun")
+mlt.plot(x,y, marker = "D" , ms = "20" , ls = "dashed" , c = "black")
+mlt.xlabel("ex 1")
+mlt.ylabel("ex 2")
+mlt.show()
+
+================================================================================================================================================================================================================
+import matplotlib.pyplot as mlt
+import numpy as np
+
+
+
+lst1 = np.array([20,19,80,40])
+
+mlt.title("expample")
+
+mlt.xlabel("just an examole")
+
+mlt.plot(lst1, marker = "D",ms = "20" , ls = "dashed", c = "black")
+
+mlt.grid()
+mlt.show()
+===============================================================================================================================================================================================================================
+import numpy as np 
+import matplotlib.pyplot as mp 
+
+lst1 = np.array([10,20,30,50,40])
+lst2 = np.array([200,100,350,780,400])
+
+mp.title("this is just an example")
+mp.xlabel("hours")
+mp.ylabel("study")
+
+mp.plot(lst1,lst2 , marker = "D" , ms = "20" , ls = "dashed" , lw = "10" , c = "black")
+mp.grid(axis= "y" , lw = "10" , c = "green")
+mp.show()
+
+=======================================================================================================================================================================================================================================
+import numpy as np 
+import matplotlib.pyplot as mp 
+
+lst1 = np.array([10,20,30,50,40])
+lst2 = np.array([200,100,350,780,400])
+
+mp.title("this is just an example")
+mp.xlabel("hours")
+mp.ylabel("study")
+
+mp.plot(lst1,lst2 , marker = "D" , ms = "20" , ls = "dashed" , lw = "10" , c = "black")
+mp.grid( lw = "0.5" , c = "green" , ls = "--")
+mp.show()
+===================================================================================================================================================================================================================
+import numpy as np 
+import matplotlib.pyplot as mp 
+
+
+lst1 = np.array([1,2,4,6])
+lst2 = np.array([20,10,80,30])
+
+mp.plot(lst1,lst2)
+mp.subplot(1,2,1)
+
+lst1 = np.array([1,2,4,6])
+lst2 = np.array([20,10,80,30])
+
+mp.plot(lst1,lst2)
+mp.subplot(1,2,1)
+
+mp.show()
+===============================================================================================================================================================================================================================
+import numpy as np
+import matplotlib.pyplot as mp
+
+
+lst1 = np.array([10,20,30])
+lst2 = np.array([100,200,300])
+
+mp.plot(lst1,lst2)
+mp.subplot(1,2,1)
+
+
+lst1 = np.array([10,20,30])
+lst2 = np.array([100,200,300])
+
+mp.plot(lst1,lst2)
+mp.subplot(2,2,2)
+
+
+lst1 = np.array([10,20,30])
+lst2 = np.array([100,200,300])
+
+mp.plot(lst1,lst2)
+mp.subplot(3,2,3)
+
+mp.show()
+===============================================================================================================================================================================================================================
+import numpy as np 
+import matplotlib.pyplot as mp
+
+
+lst1 = np.array([1,2,3,4])
+lst2 = np.array([100,200,300,400])
+mp.title("this is test1")
+mp.plot(lst1,lst2)
+mp.subplot(1,2,1)
+
+
+lst1 = np.array([1,2,3,4])
+lst2 = np.array([100,200,300,400])
+mp.title("this is test2")
+mp.plot(lst1,lst2)
+mp.subplot(1,2,2)
+mp.show()
+=======================================================================================================================================================================================================================================================================
+
+import numpy as np 
+import matplotlib.pyplot as mp
+
+lst1 = np.array([20,30,90,89])
+lst2 = np.array([90,80,60,70])
+
+mp.scatter(lst1,lst2,marker = "D" , c = "black")
+
+
+lst1 = np.array([20,30,90,89])
+lst2 = np.array([93,67,60,10])
+
+mp.scatter(lst1,lst2,marker = "D" , c = "green")
+mp.show()
+====================================================================================================================================================================================================================================================================================
+import numpy as np 
+import matplotlib.pyplot as mp
+
+
+lst1 = np.array([10,20,30,40])
+lst2 = np.array([20,89,30,10])
+mp.scatter(lst1,lst2 , marker= "D" , c = "red")
+mp.subplot(1,2,1)
+
+lst1 = np.array([10,20,30,40])
+lst2 = np.array([20,89,30,10])
+mp.scatter(lst1,lst2 , marker = "D" , c = "hotpink")
+mp.subplot(1,2,2)
+
+mp.show()
+================================================================================================================================================================================================================================================================================================
+import numpy as np 
+import matplotlib.pyplot as mp 
+
+lst1 = np.array([10,20,30,40,50])
+lst2 = np.array([100,200,300,400,500])
+
+mp.scatter(lst1,lst2 , c = "black")
+mp.show()
+=================================================================================================================================================================================================================================================================================================================
+import numpy as np 
+import matplotlib.pyplot as mp 
+
+x = np.array([5,3,2,1,23,90,20,60,40])
+y = np.array([10,20,30,403,20,10,30,50,40])
+
+mp.scatter(x,y)
+
+x = np.array([2,2,8,1,15,8,12,9,7,3,11,4,7,14,12])
+y = np.array([100,105,84,105,90,99,90,95,94,100,79,112,91,80,85])
+mp.scatter(x, y)
+
+
+mp.show()
+==============================================================================================================================================================================================================================================================================================================================
+import matplotlib.pyplot as mp
+import numpy as np
+
+
+lst1 = np.array([10,20,30,40])
+lst2 = np.array([100,200,300,400])
+
+color = ["red","blue","green","orange"]
+
+mp.scatter(lst1,lst2 , c = color , marker = "D")
+mp.show()
+========================================================================================================================================================================================================================================================================================================================================================================================\
+import matplotlib.pyplot as mp 
+import numpy as np 
+
+lst1 = np.array([10,20,30,40,50])
+lst2 = np.array([100,200,300,400,500])
+
+color = np.array([0,10,20,30,40])
+mp.scatter(lst1,lst2  , c=color , cmap = 'viridis')
+mp.colorbar()
+mp.show()
+===============================================================================================================================================================================================================================================================================================================================================
+import matplotlib.pyplot as mp
+import numpy as np
+
+lst1 = np.array([10,20,30,40,50])
+lst2 = np.array([100,200,300,400,500])
+color = np.array([0,10,20,30,40])
+mp.scatter(lst1,lst2 , marker = "D" ,  c = color , cmap = "viridis")
+mp.colorbar()
+mp.show()
+============================================================================================================================================================================================================================================================================================================================================================================================================
+import matplotlib.pyplot as mp
+import numpy as np
+
+lst1 = np.array([10,20,30,40,50])
+lst2 = np.array([100,200,300,400,500])
+color = np.array([0,10,20,30,40])
+mp.scatter(lst1,lst2 , marker = "D" ,  c = color , cmap = "Greens_r")
+mp.colorbar()
+mp.show()
+
+======================================================================================================================================================================================================================================================================================================================================================================================================================
+import matplotlib.pyplot as mp
+import numpy as np 
+
+lst1 = np.array([10,20,30,40,50,60])
+lst2 = np.array([100,200,300,400,500,500])
+
+mp.bar(lst1,lst2)
+mp.show()
+====================================================================================================================================================================================================================
+import matplotlib.pyplot as mp 
+import numpy as np 
+
+lst1 = np.array(["A","B","C","D","E"])
+lst2 = np.array([10,20,30,40,50])
+
+mp.bar(lst1,lst2)
+mp.show()
+======================================================================================================================================================================================================================================
+
+
+import numpy as np
+import matplotlib.pyplot as mp
+
+
+lst1 = []
+lst2 = []
+for i in range(1):
+    ans1 = int(input("marks in Islamiat : "))
+    lst1.append(ans1)
+
+    ans2 = int(input("marks in Urdu : "))
+    lst1.append(ans2)
+
+    ans3 = int(input("marks in Pakistan Studies : "))
+    lst1.append(ans3)
+
+    ans4 = int(input("marks in English : "))
+    lst1.append(ans4)
+
+    ans5 = int(input("marks in Biology : "))
+    lst1.append(ans5)
+
+    ans6 = int(input("marks in Physics : "))
+    lst1.append(ans6)
+
+    ans7 = int(input("marks in Chemistry : "))
+    lst1.append(ans7)
+
+    ans8 = int(input("marks in Maths"))
+    lst1.append(ans8)
+
+
+    usr1 = int(input("marks got in Islamiat : "))
+    lst2.append(usr1)
+
+
+    usr2 = int(input("marks got in urdu : "))
+    lst2.append(usr2)
+
+
+    usr3 = int(input("marks got in Pakistan Studies : "))
+    lst2.append(usr3)
+
+
+    usr4 = int(input("marks got in English : "))
+    lst2.append(usr4)
+
+    usr5 = int(input("marks got in Biology : "))
+    lst2.append(usr5)
+
+
+    usr6 = int(input("marks got in Physics : "))
+    lst2.append(usr6)
+
+
+    usr7 = int(input("marks got in chemistry : "))
+    lst2.append(usr7)
+
+
+    usr8 = int(input("marks got in maths : "))
+    lst2.append(usr8)
+
+    des1 = np.array([lst1])
+    des2 = np.array([lst2])
+
+    mp.title("Board Marks")
+    mp.xlabel("marks gained")
+    mp.ylabel("total marks")
+    mp.plot(des1,des2 , marker = "D" ,ms = "20" , c = "black")
+
+mp.show()
+============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('f12.txt')
+
+df.plot()
+
+plt.show() 
+
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+import matplotlib.pyplot as mp
+import numpy as np 
+
+lst1 = np.array(["a","b","c"])
+lst2 = np.array([10,20,30])
+
+mp.bar(lst1,lst2 , color = "Green")
+mp.show()
+===========================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+
+import matplotlib.pyplot as mp
+import numpy as np 
+
+lst1 = np.array(["a","b","c"])
+lst2 = np.array([10,20,30])
+
+mp.barh(lst1,lst2 , color = "Green")
+mp.show()
+=======================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+import matplotlib.pyplot as mp
+import numpy as np
+
+lst1 = np.array(["A","B","C","D"])
+lst2 = np.array([10,20,30,40])
+
+colors = ["red","blue","green","yellow"]
+
+mp.bar(lst1,lst2 , color = colors , width = 0.1)
+mp.show()
+===============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+import matplotlib.pyplot as mp
+import numpy as no
+
+lst1 = no.random.normal([270,10,30])
+mp.hist(lst1)
+mp.show()
+=============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+import matplotlib.pyplot as mp 
+import numpy as np 
+
+
+lst2 = np.array([100,200,300,400])
+mp.pie(lst2)
+mp.show(0
+0===============================================================================================================================================================================-
+import matplotlib.pyplot as mp 
+import numpy as np 
+
+lst1 = np.array(["nigga","phinigga","goof","ohh shutup"])
+lst2 = np.array([100,200,300,400])
+mp.pie(lst2 , labels = lst1)
+mp.show()s
+================================================================================================================================================================================================================
+import matplotlib.pyplot as mp
+import numpy as np
+
+lst1 = np.array([10,20,30,40])
+lst2 = ["red","blue","green","white"]
+
+mp.pie(lst1 , labels=lst2 , startangle=80)
+mp.show()
+================================================================================================================================================================================================================
+import matplotlib.pyplot as mp
+import numpy as np
+
+lst1 = np.array([10,20,30,40])
+l = ["red","jam","bruu","apple"]
+e = [0.2,0,0,0]
+mp.pie(lst1, labels=l, explode= e)
+mp.show()
+==============================================================================================================================================================================================================================================================================
+import matplotlib.pyplot as mp 
+import numpy as np 
+
+lst1 = np.array(["banan","apple","cherry"])
+lst2 = np.array([20,30,40])
+e = [0.2,0,0]
+colors = ["hotpink","blue","green"]
+
+mp.pie(lst2 , labels= lst1 , explode = e , colors = colors , shadow = True)
+mp.show()
